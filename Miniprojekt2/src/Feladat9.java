@@ -7,12 +7,14 @@ public class Feladat9 {
         for (int i = 0; i < array.length; i+=1){
             for (int j = 0; j < array.length; j+=1){
                 if (i == j){
-                    System.out.print(i+" ");
+                    array[i][j] = i;
                 }else {
-                    System.out.print(0+" ");
+                    array[i][j] = 0;
                 }
             }
-            System.out.println();
+        }
+        for (int[] item:array){
+            System.out.println(Arrays.toString(item));
         }
 
     }
